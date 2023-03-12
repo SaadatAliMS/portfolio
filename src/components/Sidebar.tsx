@@ -9,8 +9,14 @@ import { GiTie } from "react-icons/gi";
 import Image from "next/image";
 import profile from "../../public/photo.jpg";
 import Link from "next/link";
+import { useTheme } from "next-themes";
 
 const Sidebar = () => {
+  const { theme, setTheme } = useTheme();
+  const changeTheme = () => {
+    setTheme(theme === "light" ? "dark" : "light");
+  };
+
   return (
     <div>
       <Image
@@ -42,8 +48,8 @@ const Sidebar = () => {
         </Link>
       </div>
       {/* address */}
-      <div className="py-4 my-4 w-full bg-gray-200 ">
-        <div className="flex items-center justify-center space-x-2">
+      <div className="py-4 my-4 w-full bg-gray-200  ">
+        <div className="flex items-center justify-center space-x-2 ">
           <GoLocation />
           <span>Gujranwala,Pakistan</span>
         </div>
@@ -57,7 +63,10 @@ const Sidebar = () => {
       >
         Email Me
       </button>
-      <button className="bg-gradient-to-r from-green-default to-blue-400 w-8/12 rounded-full py-2 px-5 text-white my-2">
+      <button
+        onClick={changeTheme}
+        className="bg-gradient-to-r from-green-default to-blue-400 w-8/12 rounded-full py-2 px-5 text-white my-2"
+      >
         Toggle Theme
       </button>
     </div>

@@ -2,7 +2,8 @@ import { RiComputerLine } from "react-icons/ri";
 import { FaServer } from "react-icons/fa";
 import { AiOutlineAntDesign, AiOutlineApi } from "react-icons/ai";
 import { GiBrain } from "react-icons/gi";
-import { IService } from "./type";
+import { IService, ISkill } from "./type";
+import { BsCircleFill } from "react-icons/bs";
 
 export const services: IService[] = [
   {
@@ -36,5 +37,60 @@ export const services: IService[] = [
     about:
       "I am Data Scientist and Machine Learning Engineer and applying it in Nuclear Medicine.I regularly participate in Kaggle competitions",
     Icon: GiBrain,
+  },
+];
+
+export const languages: ISkill[] = [
+  {
+    name: "Python",
+    level: "90%",
+    Icon: BsCircleFill,
+  },
+  {
+    name: "Java Script",
+    level: "80%",
+    Icon: BsCircleFill,
+  },
+  {
+    name: "Typescript",
+    level: "70%",
+    Icon: BsCircleFill,
+  },
+  {
+    name: "Next.Js",
+    level: "90%",
+    Icon: BsCircleFill,
+  },
+  {
+    name: "Django",
+    level: "60%",
+    Icon: BsCircleFill,
+  },
+  {
+    name: "Tailwind Css",
+    level: "75%",
+    Icon: BsCircleFill,
+  },
+];
+export const tolls: ISkill[] = [
+  {
+    name: "Figma",
+    level: "90%",
+    Icon: BsCircleFill,
+  },
+  {
+    name: "Photoshop",
+    level: "60%",
+    Icon: BsCircleFill,
+  },
+  {
+    name: "Illustrator",
+    level: "50%",
+    Icon: BsCircleFill,
+  },
+  {
+    name: "Framer",
+    level: "40%",
+    Icon: BsCircleFill,
   },
 ];
