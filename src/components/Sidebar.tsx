@@ -65,7 +65,7 @@ const Sidebar = () => {
       </button>
       <button
         onClick={changeTheme}
-        className="bg-gradient-to-r from-green-default to-blue-400 w-8/12 rounded-full py-2 px-5 text-white my-2"
+        className="bg-gradient-to-r from-green-default to-blue-400 w-8/12 rounded-full py-2 px-5 text-white my-2  bg-black"
       >
         Toggle Theme
       </button>

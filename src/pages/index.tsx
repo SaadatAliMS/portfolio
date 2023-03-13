@@ -16,7 +16,7 @@ export const index = () => {
         building mobile-responsive designs using CSS frameworks like Bootstrap
         and Materialize.
       </h5>
-      <div className="p-2 mt-5 bg-gray-100 flex-grow">
+      <div className="p-2 mt-5 bg-gray-100 flex-grow dark:bg-dark-100">
         <h6 className="text-xl my-3  font-extrabold tracking-wide">
           Services Offered
         </h6>
