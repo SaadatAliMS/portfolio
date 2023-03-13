@@ -2,7 +2,7 @@ import { RiComputerLine } from "react-icons/ri";
 import { FaServer } from "react-icons/fa";
 import { AiOutlineAntDesign, AiOutlineApi } from "react-icons/ai";
 import { GiBrain } from "react-icons/gi";
-import { IService, ISkill, IProjects } from "./type";
+import { IService, ISkill } from "./type";
 import { BsCircleFill } from "react-icons/bs";
 
 export const services: IService[] = [
@@ -94,4 +94,4 @@ export const tolls: ISkill[] = [
     Icon: BsCircleFill,
   },
 ];
-export const projects: IProjects[] = [];
+// export const projects: IProjects[] = [];

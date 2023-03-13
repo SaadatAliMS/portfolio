@@ -26,9 +26,9 @@ const Navbar = () => {
   const [activeItem, setActiveItem] = useState<string>("");
   const { pathname } = useRouter();
   useEffect(() => {
-    if (pathname === "/") setActiveItem("About");
-    if (pathname === "/projects") setActiveItem("Projects");
-    if (pathname === "/resume") setActiveItem("Resume");
+    if (pathname === "./") setActiveItem("About");
+    if (pathname === "./projects") setActiveItem("Projects");
+    if (pathname === "./resume") setActiveItem("Resume");
   }, []);
 
   return (

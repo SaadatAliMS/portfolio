@@ -22,7 +22,10 @@ export const index = () => {
         </h6>
         <div className="grid lg:grid-cols-2 gap-6 text-justify my-3 text-xl ">
           {services.map((service) => (
-            <div className="lg:col-span-1 bg-gray-300 rounded-lg shadow-lg">
+            <div
+              className="lg:col-span-1 bg-gray-300 rounded-lg shadow-lg"
+              key="title"
+            >
               <ServiceCard service={service} />
             </div>
           ))}
